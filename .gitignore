@@ -27,6 +27,9 @@ vendor/
 # dotenv environment variables file
 .env
 
+# Lock file because it's a plugin
+composer.lock
+
 # Cache
 .cache
 
