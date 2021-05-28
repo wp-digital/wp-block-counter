@@ -1,0 +1,24 @@
+.innocode-block-counter {
+	text-align: center;
+
+	& &-list {
+		display: flex;
+		margin: 0 0 1em;
+		padding-left: 0;
+		width: 100%;
+	}
+
+	& &-item {
+		flex-basis: 100%;
+		margin: 0 1em;
+		width: 0;
+		list-style: none;
+
+		&__number {
+			margin: 1em 0;
+			font-size: 2.5em;
+			line-height: 1;
+			white-space: nowrap;
+		}
+	}
+}

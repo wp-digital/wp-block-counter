@@ -1,0 +1,15 @@
+{
+	"apiVersion": 2,
+	"name": "innocode/wp-block-counter",
+	"title": "Counter",
+	"category": "design",
+	"icon": "smiley",
+	"description": "Number animation by user interaction.",
+	"supports": {
+		"html": false
+	},
+	"textdomain": "innocode-block-counter",
+	"editorScript": "file:./build/index.js",
+    "script": "file:./build/main.js",
+	"style": "file:./build/style-index.css"
+}

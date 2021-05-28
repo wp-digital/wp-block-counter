@@ -1,0 +1,11 @@
+{
+  "name": "innocode-digital/wp-block-counter",
+  "version": "1.0.0",
+  "type": "wordpress-plugin",
+  "license": "GPL-2.0+",
+  "require": {
+	"php": ">=7.1",
+	"composer/installers": "~1.0"
+  },
+  "description": "Number animation by user interaction."
+}
