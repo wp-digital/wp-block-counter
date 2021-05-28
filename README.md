@@ -5,6 +5,10 @@
 Number animation by user interaction. Columns with numbers which are start animation 
 when user scrolls to block.
 
+### Demo
+
+[Counter Block](https://blocks.innocode.digital/counter-block/)
+
 ### Install
 
 - Preferable way is to use [Composer](https://getcomposer.org/):
