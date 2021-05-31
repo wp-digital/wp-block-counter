@@ -20,9 +20,7 @@ domReady( () => {
 	};
 
 	if ( typeof window.IntersectionObserver === 'undefined' ) {
-		[].map.call( elements, ( element ) => {
-			handler( element );
-		} );
+		[].map.call( elements, handler );
 
 		return;
 	}

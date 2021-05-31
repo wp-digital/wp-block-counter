@@ -1,7 +1,7 @@
 import { range } from 'lodash';
 
+import { BLOCK_CLASS_NAME } from './constants';
 import {
-	BLOCK_CLASS_NAME,
 	COLUMNS_MAX,
 	COLUMNS_DEFAULT,
 	LAYOUT_DEFAULT,
@@ -10,7 +10,7 @@ import {
 	HAS_TITLE_DEFAULT,
 	HAS_ICON_DEFAULT,
 	HAS_DESCRIPTION_DEFAULT,
-} from './constants';
+} from './constants/editor';
 
 export default {
 	hasSectionTitle: {

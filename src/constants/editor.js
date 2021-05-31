@@ -1,7 +1,5 @@
 import { applyFilters } from '@wordpress/hooks';
 
-export const BLOCK_CLASS_NAME = 'innocode-block-counter';
-
 export const COLUMNS_MAX = applyFilters(
 	'innocode.block-counter.columns.max',
 	6

@@ -1,15 +1,15 @@
 import { useBlockProps, RichText } from '@wordpress/block-editor';
 import { range } from 'lodash';
 
+import { BLOCK_CLASS_NAME } from './constants';
 import {
-	BLOCK_CLASS_NAME,
 	COLUMNS_DEFAULT,
 	LAYOUT_BEFORE_TITLE,
 	LAYOUT_AFTER_TITLE,
 	LAYOUT_DEFAULT,
 	SECTION_TITLE_TAG,
 	TITLE_TAG,
-} from './constants';
+} from './constants/editor';
 
 export default function save( { attributes } ) {
 	const {

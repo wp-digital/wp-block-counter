@@ -29,7 +29,7 @@ Activate **Block Counter** with [WP-CLI](https://make.wordpress.org/cli/handbook
 
 ### Documentation
 
-There are some hooks in [constants](./src/constants.js) which give a possibility to
+There are some hooks in [constants](./src/constants/editor.js) which give a possibility to
 customize behaviour a bit.
 
 ### Notes

@@ -15,10 +15,11 @@ import {
 	PanelRow,
 	RadioControl,
 } from '@wordpress/components';
+import { useState } from '@wordpress/element';
 import { has, random, range } from 'lodash';
 
+import { BLOCK_CLASS_NAME } from './constants';
 import {
-	BLOCK_CLASS_NAME,
 	COLUMNS_MAX,
 	COLUMNS_DEFAULT,
 	LAYOUT_BEFORE_TITLE,
@@ -33,7 +34,7 @@ import {
 	HAS_ICON_DEFAULT,
 	HAS_DESCRIPTION_DEFAULT,
 	NUMBER_EXAMPLES,
-} from './constants';
+} from './constants/editor';
 import IconsPicker from './IconsPicker';
 
 export default function Edit( props ) {
@@ -49,6 +50,11 @@ export default function Edit( props ) {
 		hasDescription = HAS_DESCRIPTION_DEFAULT,
 		layout = LAYOUT_DEFAULT,
 	} = attributes;
+	const [ randomNumbers ] = useState(
+		range( 0, COLUMNS_MAX ).map(
+			() => NUMBER_EXAMPLES[ random( 0, NUMBER_EXAMPLES.length - 1 ) ]
+		)
+	);
 
 	return (
 		<div
@@ -287,14 +293,7 @@ export default function Edit( props ) {
 								<RichText
 									tagName="div"
 									value={ attributes[ `number-${ i }` ] }
-									placeholder={
-										NUMBER_EXAMPLES[
-											random(
-												0,
-												NUMBER_EXAMPLES.length - 1
-											)
-										]
-									}
+									placeholder={ randomNumbers[ i ] }
 									onChange={ ( value ) => {
 										setAttributes( {
 											[ `number-${ i }` ]: value,
