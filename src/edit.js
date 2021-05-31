@@ -59,7 +59,7 @@ export default function Edit( props ) {
 	return (
 		<div
 			{ ...useBlockProps( {
-				className: `${ BLOCK_CLASS_NAME } ${ BLOCK_CLASS_NAME }--columns-${ columns }`,
+				className: `${ BLOCK_CLASS_NAME } ${ BLOCK_CLASS_NAME }_columns-${ columns }`,
 			} ) }
 		>
 			<InspectorControls>
@@ -260,7 +260,7 @@ export default function Edit( props ) {
 						return (
 							<li
 								key={ i }
-								className={ `${ BLOCK_CLASS_NAME }-item ${ BLOCK_CLASS_NAME }-item--${
+								className={ `${ BLOCK_CLASS_NAME }-item ${ BLOCK_CLASS_NAME }-item_${
 									i + 1
 								}` }
 							>

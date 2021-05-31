@@ -63,14 +63,14 @@ export default {
 			[ `number-${ i }` ]: {
 				type: 'string',
 				source: 'html',
-				selector: `.${ BLOCK_CLASS_NAME }-item--${
+				selector: `.${ BLOCK_CLASS_NAME }-item_${
 					i + 1
 				} .${ BLOCK_CLASS_NAME }-item__number`,
 			},
 			[ `title-${ i }` ]: {
 				type: 'string',
 				source: 'html',
-				selector: `.${ BLOCK_CLASS_NAME }-item--${
+				selector: `.${ BLOCK_CLASS_NAME }-item_${
 					i + 1
 				} .${ BLOCK_CLASS_NAME }-item__title`,
 			},
@@ -78,7 +78,7 @@ export default {
 				type: 'string',
 				source: 'html',
 				multiline: 'p',
-				selector: `.${ BLOCK_CLASS_NAME }-item--${
+				selector: `.${ BLOCK_CLASS_NAME }-item_${
 					i + 1
 				} .${ BLOCK_CLASS_NAME }-item__description`,
 			},

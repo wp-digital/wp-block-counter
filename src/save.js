@@ -27,7 +27,7 @@ export default function save( { attributes } ) {
 	return (
 		<div
 			{ ...useBlockProps.save( {
-				className: `${ BLOCK_CLASS_NAME } ${ BLOCK_CLASS_NAME }--columns-${ columns }`,
+				className: `${ BLOCK_CLASS_NAME } ${ BLOCK_CLASS_NAME }_columns-${ columns }`,
 			} ) }
 		>
 			{ hasSectionTitle && (
@@ -50,7 +50,7 @@ export default function save( { attributes } ) {
 					{ range( columns ).map( ( i ) => (
 						<li
 							key={ i }
-							className={ `${ BLOCK_CLASS_NAME }-item ${ BLOCK_CLASS_NAME }-item--${
+							className={ `${ BLOCK_CLASS_NAME }-item ${ BLOCK_CLASS_NAME }-item_${
 								i + 1
 							}` }
 						>

@@ -15,7 +15,7 @@ domReady( () => {
 	const handler = ( element ) => {
 		counterUp( element );
 		element.classList.add(
-			`${ BLOCK_CLASS_NAME }-item__number--is-visible`
+			`${ BLOCK_CLASS_NAME }-item__number_is-visible`
 		);
 	};
 
