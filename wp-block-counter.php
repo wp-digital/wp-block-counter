@@ -2,7 +2,7 @@
 /**
  * Plugin Name:     Counter
  * Description:     Number animation by user interaction.
- * Version:         1.2.0
+ * Version:         1.2.1
  * Author:          Innocode
  * License:         GPL-2.0-or-later
  * License URI:     https://www.gnu.org/licenses/gpl-2.0.html
