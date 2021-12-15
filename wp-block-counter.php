@@ -1,18 +1,20 @@
 <?php
 /**
- * Plugin Name:     Counter
- * Description:     Number animation by user interaction.
- * Version:         1.2.1
- * Author:          Innocode
- * License:         GPL-2.0-or-later
- * License URI:     https://www.gnu.org/licenses/gpl-2.0.html
- * Text Domain:     innocode-block-counter
+ * Plugin Name:       Counter
+ * Description:       Number animation by user interaction.
+ * Requires at least: 5.8.2
+ * Requires PHP:      7.0
+ * Version:           1.3.0
+ * Author:            Innocode
+ * License:           GPL-2.0-or-later
+ * License URI:       https://www.gnu.org/licenses/gpl-2.0.html
+ * Text Domain:       innocode-block-counter
  *
- * @package         innocode
+ * @package           innocode
  */
 
-function innocode_wp_block_counter_block_init() {
-	register_block_type_from_metadata( __DIR__ );
+function innocode_block_counter_block_init() {
+	register_block_type( __DIR__ );
 }
 
-add_action( 'init', 'innocode_wp_block_counter_block_init' );
+add_action( 'init', 'innocode_block_counter_block_init' );

@@ -7,14 +7,14 @@ import icon from './icon';
 
 import './style.scss';
 
-registerBlockType( 'innocode/wp-block-counter', {
+registerBlockType('innocode/block-counter', {
 	apiVersion: 2,
 	supports: {
-		align: [ 'center', 'wide', 'full' ],
+		align: ['center', 'wide', 'full'],
 		className: false,
 	},
+	attributes,
 	edit: Edit,
 	save,
-	attributes,
 	icon,
-} );
+});

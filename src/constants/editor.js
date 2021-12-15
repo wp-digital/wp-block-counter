@@ -20,14 +20,11 @@ export const SECTION_TITLE_TAG = applyFilters(
 	'innocode.block-counter.section_title.tag',
 	'h3'
 );
-export const TITLE_TAG = applyFilters(
-	'innocode.block-counter.title.tag',
-	'h4'
-);
+export const TITLE_TAG = applyFilters('innocode.block-counter.title.tag', 'h4');
 
 export const ICONS = applyFilters(
 	'innocode.block-counter.icons',
-	applyFilters( 'innocode.block.icons', [] )
+	applyFilters('innocode.block.icons', [])
 );
 
 export const HAS_SECTION_TITLE_DEFAULT = applyFilters(
@@ -53,5 +50,5 @@ export const HAS_DESCRIPTION_DEFAULT = applyFilters(
 
 export const NUMBER_EXAMPLES = applyFilters(
 	'innocode.block-counter.number.examples',
-	[ '1,234.95', '934', '$100.00', '95%' ]
+	['1,234.95', '934', '$100.00', '95%']
 );

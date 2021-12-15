@@ -20,7 +20,7 @@ export default {
 	title: {
 		type: 'string',
 		source: 'html',
-		selector: `.${ BLOCK_CLASS_NAME }-title`,
+		selector: `.${BLOCK_CLASS_NAME}-title`,
 	},
 	hasSectionDescription: {
 		type: 'boolean',
@@ -30,7 +30,7 @@ export default {
 		type: 'string',
 		source: 'html',
 		multiline: 'p',
-		selector: `.${ BLOCK_CLASS_NAME }-description`,
+		selector: `.${BLOCK_CLASS_NAME}-description`,
 	},
 	columns: {
 		type: 'integer',
@@ -54,35 +54,35 @@ export default {
 		type: 'string',
 		default: LAYOUT_DEFAULT,
 	},
-	...range( COLUMNS_MAX ).reduce(
-		( columns, i ) => ( {
+	...range(COLUMNS_MAX).reduce(
+		(columns, i) => ({
 			...columns,
-			[ `icon-${ i }` ]: {
+			[`icon-${i}`]: {
 				type: 'string',
 			},
-			[ `number-${ i }` ]: {
-				type: 'string',
-				source: 'html',
-				selector: `.${ BLOCK_CLASS_NAME }-item_${
-					i + 1
-				} .${ BLOCK_CLASS_NAME }-item__number`,
-			},
-			[ `title-${ i }` ]: {
+			[`number-${i}`]: {
 				type: 'string',
 				source: 'html',
-				selector: `.${ BLOCK_CLASS_NAME }-item_${
+				selector: `.${BLOCK_CLASS_NAME}-item_${
 					i + 1
-				} .${ BLOCK_CLASS_NAME }-item__title`,
+				} .${BLOCK_CLASS_NAME}-item__number`,
 			},
-			[ `description-${ i }` ]: {
+			[`title-${i}`]: {
+				type: 'string',
+				source: 'html',
+				selector: `.${BLOCK_CLASS_NAME}-item_${
+					i + 1
+				} .${BLOCK_CLASS_NAME}-item__title`,
+			},
+			[`description-${i}`]: {
 				type: 'string',
 				source: 'html',
 				multiline: 'p',
-				selector: `.${ BLOCK_CLASS_NAME }-item_${
+				selector: `.${BLOCK_CLASS_NAME}-item_${
 					i + 1
-				} .${ BLOCK_CLASS_NAME }-item__description`,
+				} .${BLOCK_CLASS_NAME}-item__description`,
 			},
-		} ),
+		}),
 		{}
 	),
 };
