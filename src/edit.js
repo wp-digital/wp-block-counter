@@ -9,7 +9,7 @@ import {
 import {
 	__experimentalRadio as Radio,
 	__experimentalRadioGroup as RadioGroup,
-	FormToggle,
+	ToggleControl,
 	Icon,
 	PanelBody,
 	PanelRow,
@@ -68,27 +68,23 @@ export default function Edit(props) {
 					initialOpen={false}
 				>
 					<PanelRow>
-						<legend className="blocks-base-control__label">
-							{__('Show title', 'innocode-block-counter')}
-						</legend>
-						<FormToggle
+						<ToggleControl
+							label={__('Show title', 'innocode-block-accordion')}
 							checked={hasSectionTitle}
-							onChange={(event) => {
+							onChange={() => {
 								setAttributes({
-									hasSectionTitle: event.target.checked,
+									hasSectionTitle: !hasSectionTitle,
 								});
 							}}
 						/>
 					</PanelRow>
 					<PanelRow>
-						<legend className="blocks-base-control__label">
-							{__('Show description', 'innocode-block-counter')}
-						</legend>
-						<FormToggle
+						<ToggleControl
+							label={__('Show description', 'innocode-block-accordion')}
 							checked={hasSectionDescription}
-							onChange={(event) => {
+							onChange={() => {
 								setAttributes({
-									hasSectionDescription: event.target.checked,
+									hasSectionDescription: !hasSectionDescription,
 								});
 							}}
 						/>
@@ -116,41 +112,35 @@ export default function Edit(props) {
 				>
 					{!!ICONS.length && (
 						<PanelRow>
-							<legend className="blocks-base-control__label">
-								{__('Show icon', 'innocode-block-counter')}
-							</legend>
-							<FormToggle
+							<ToggleControl
+								label={__('Show icon', 'innocode-block-accordion')}
 								checked={hasIcon}
-								onChange={(event) => {
+								onChange={() => {
 									setAttributes({
-										hasIcon: event.target.checked,
+										hasIcon: !hasIcon,
 									});
 								}}
 							/>
 						</PanelRow>
 					)}
 					<PanelRow>
-						<legend className="blocks-base-control__label">
-							{__('Show title', 'innocode-block-counter')}
-						</legend>
-						<FormToggle
+						<ToggleControl
+							label={__('Show title', 'innocode-block-accordion')}
 							checked={hasTitle}
-							onChange={(event) => {
+							onChange={() => {
 								setAttributes({
-									hasTitle: event.target.checked,
+									hasTitle: !hasTitle,
 								});
 							}}
 						/>
 					</PanelRow>
 					<PanelRow>
-						<legend className="blocks-base-control__label">
-							{__('Show description', 'innocode-block-counter')}
-						</legend>
-						<FormToggle
+						<ToggleControl
+							label={__('Show description', 'innocode-block-accordion')}
 							checked={hasDescription}
-							onChange={(event) => {
+							onChange={() => {
 								setAttributes({
-									hasDescription: event.target.checked,
+									hasDescription: !hasDescription,
 								});
 							}}
 						/>
