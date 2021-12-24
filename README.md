@@ -1,4 +1,4 @@
-# Block Counter
+# Counter Block
 
 ### Description
 
@@ -24,7 +24,7 @@ when user scrolls to block.
     git clone git@github.com:innocode-digital/wp-block-counter.git
     ````
 
-Activate **Block Counter** with [WP-CLI](https://make.wordpress.org/cli/handbook/)
+Activate **Counter Block** with [WP-CLI](https://make.wordpress.org/cli/handbook/)
 `wp plugin activate wp-block-counter` or from **Plugins** page.
 
 ### Documentation
