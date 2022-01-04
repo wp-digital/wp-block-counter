@@ -80,11 +80,15 @@ export default function Edit(props) {
 					</PanelRow>
 					<PanelRow>
 						<ToggleControl
-							label={__('Show description', 'innocode-block-accordion')}
+							label={__(
+								'Show description',
+								'innocode-block-accordion'
+							)}
 							checked={hasSectionDescription}
 							onChange={() => {
 								setAttributes({
-									hasSectionDescription: !hasSectionDescription,
+									hasSectionDescription:
+										!hasSectionDescription,
 								});
 							}}
 						/>
@@ -113,7 +117,10 @@ export default function Edit(props) {
 					{!!ICONS.length && (
 						<PanelRow>
 							<ToggleControl
-								label={__('Show icon', 'innocode-block-accordion')}
+								label={__(
+									'Show icon',
+									'innocode-block-accordion'
+								)}
 								checked={hasIcon}
 								onChange={() => {
 									setAttributes({
@@ -136,7 +143,10 @@ export default function Edit(props) {
 					</PanelRow>
 					<PanelRow>
 						<ToggleControl
-							label={__('Show description', 'innocode-block-accordion')}
+							label={__(
+								'Show description',
+								'innocode-block-accordion'
+							)}
 							checked={hasDescription}
 							onChange={() => {
 								setAttributes({
