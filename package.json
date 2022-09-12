@@ -1,6 +1,6 @@
 {
 	"name": "wp-block-counter",
-	"version": "1.3.6",
+	"version": "1.7.0",
 	"description": "Number animation by user interaction.",
 	"author": "Innocode",
 	"license": "GPL-2.0-or-later",

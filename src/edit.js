@@ -64,7 +64,7 @@ export default function Edit(props) {
 		>
 			<InspectorControls>
 				<PanelBody
-					title={__('Section Settings', 'innocode-block-counter')}
+					title={__('Section Settings', 'innocode-blocks')}
 					initialOpen={false}
 				>
 					<PanelRow>
@@ -95,7 +95,7 @@ export default function Edit(props) {
 					</PanelRow>
 					<PanelRow>
 						<legend className="blocks-base-control__label">
-							{__('Columns', 'innocode-block-counter')}
+							{__('Columns', 'innocode-blocks')}
 						</legend>
 						<RadioGroup
 							onChange={(value) => {
@@ -111,9 +111,7 @@ export default function Edit(props) {
 						</RadioGroup>
 					</PanelRow>
 				</PanelBody>
-				<PanelBody
-					title={__('Item Settings', 'innocode-block-counter')}
-				>
+				<PanelBody title={__('Item Settings', 'innocode-blocks')}>
 					{!!ICONS.length && (
 						<PanelRow>
 							<ToggleControl
@@ -158,21 +156,21 @@ export default function Edit(props) {
 					{hasTitle && (
 						<PanelRow>
 							<RadioControl
-								label={__('Layout', 'innocode-block-counter')}
+								label={__('Layout', 'innocode-blocks')}
 								selected={layout}
 								disabled={!hasTitle}
 								options={[
 									{
 										label: __(
 											'Before Title',
-											'innocode-block-counter'
+											'innocode-blocks'
 										),
 										value: LAYOUT_BEFORE_TITLE,
 									},
 									{
 										label: __(
 											'After Title',
-											'innocode-block-counter'
+											'innocode-blocks'
 										),
 										value: LAYOUT_AFTER_TITLE,
 									},
@@ -185,16 +183,13 @@ export default function Edit(props) {
 					)}
 				</PanelBody>
 				{!!ICONS.length && hasIcon && (
-					<PanelBody title={__('Icons', 'innocode-block-counter')}>
+					<PanelBody title={__('Icons', 'innocode-blocks')}>
 						{range(columns).map((i) => (
 							<PanelRow key={i}>
 								<IconsPicker
 									label={sprintf(
 										/* translators: %d: Column number. */
-										__(
-											'Column #%d',
-											'innocode-block-counter'
-										),
+										__('Column #%d', 'innocode-blocks'),
 										i + 1
 									)}
 									icons={ICONS}
@@ -214,7 +209,7 @@ export default function Edit(props) {
 				<RichText
 					tagName={SECTION_TITLE_TAG}
 					value={title}
-					placeholder={__('Title', 'innocode-block-counter')}
+					placeholder={__('Title', 'innocode-blocks')}
 					onChange={(value) => {
 						setAttributes({ title: value });
 					}}
@@ -226,7 +221,7 @@ export default function Edit(props) {
 					tagName="div"
 					multiline="p"
 					value={description}
-					placeholder={__('Description', 'innocode-block-counter')}
+					placeholder={__('Description', 'innocode-blocks')}
 					onChange={(value) => {
 						setAttributes({ description: value });
 					}}
@@ -262,7 +257,7 @@ export default function Edit(props) {
 										value={attributes[`title-${i}`]}
 										placeholder={__(
 											'Title',
-											'innocode-block-counter'
+											'innocode-blocks'
 										)}
 										onChange={(value) => {
 											setAttributes({
@@ -289,7 +284,7 @@ export default function Edit(props) {
 										value={attributes[`title-${i}`]}
 										placeholder={__(
 											'Title',
-											'innocode-block-counter'
+											'innocode-blocks'
 										)}
 										onChange={(value) => {
 											setAttributes({
@@ -306,7 +301,7 @@ export default function Edit(props) {
 										value={attributes[`description-${i}`]}
 										placeholder={__(
 											'Description',
-											'innocode-block-counter'
+											'innocode-blocks'
 										)}
 										onChange={(value) => {
 											setAttributes({

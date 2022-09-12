@@ -31,8 +31,8 @@ export default function IconsPicker(props) {
 				}}
 			>
 				{!value
-					? __('Add Icon', 'innocode-block-counter')
-					: __('Update Icon', 'innocode-block-counter')}
+					? __('Add Icon', 'innocode-blocks')
+					: __('Update Icon', 'innocode-blocks')}
 			</Button>
 			{isOpened && (
 				<Modal
@@ -81,7 +81,7 @@ export default function IconsPicker(props) {
 									setIsOpened(false);
 								}}
 							>
-								{__('Set Icon', 'innocode-block-counter')}
+								{__('Set Icon', 'innocode-blocks')}
 							</Button>
 						</FlexItem>
 					</Flex>
