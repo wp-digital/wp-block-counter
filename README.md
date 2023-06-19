@@ -7,21 +7,21 @@ when user scrolls to block.
 
 ### Demo
 
-[Counter Block](https://blocks.innocode.digital/counter-block/)
+[Counter Block](https://blocks.wpd.digital/counter-block/)
 
 ### Install
 
 - Preferable way is to use [Composer](https://getcomposer.org/):
 
     ````
-    composer require innocode-digital/wp-block-counter
+    composer require wpd-digital/wp-block-counter
     ````
 
 - Alternate way is to clone this repo to `wp-content/plugins/`:
 
     ````
     cd wp-content/plugins/
-    git clone git@github.com:innocode-digital/wp-block-counter.git
+    git clone git@github.com:wpd-digital/wp-block-counter.git
     ````
 
 Activate **Counter Block** with [WP-CLI](https://make.wordpress.org/cli/handbook/)
@@ -29,11 +29,11 @@ Activate **Counter Block** with [WP-CLI](https://make.wordpress.org/cli/handbook
 
 ### Documentation
 
-Add icons with hook `innocode.block.icons` for global icons and `innocode.block-counter.icons`
+Add icons with hook `wpd.block.icons` for global icons and `wpd.block-counter.icons`
 for specific block set. **Example**:
 
 ```
-wp.hooks.addFilter( 'innocode.block.icons', 'my-theme', () => [
+wp.hooks.addFilter( 'wpd.block.icons', 'my-theme', () => [
 	{
 		value: 'smiley', // Required. If only a value is specified, Dashicons will be used.
 	}, {

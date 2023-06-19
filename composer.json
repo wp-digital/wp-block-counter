@@ -1,6 +1,6 @@
 {
-  "name": "innocode-digital/wp-block-counter",
-  "version": "1.7.0",
+  "name": "wpd-digital/wp-block-counter",
+  "version": "1.8.0",
   "type": "wordpress-plugin",
   "license": "GPL-2.0+",
   "require": {

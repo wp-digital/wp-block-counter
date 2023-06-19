@@ -1,14 +1,14 @@
 {
   "apiVersion": 2,
-  "name": "innocode/block-counter",
-  "version": "1.7.0",
+  "name": "wpd/block-counter",
+  "version": "1.8.0",
   "title": "Counter",
   "category": "design",
   "description": "Number animation by user interaction.",
   "supports": {
 	"html": false
   },
-  "textdomain": "innocode-blocks",
+  "textdomain": "wpd-blocks",
   "editorScript": "file:./build/index.js",
   "script": "file:./build/view.js",
   "style": "file:./build/style-index.css"

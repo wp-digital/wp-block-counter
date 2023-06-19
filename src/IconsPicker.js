@@ -31,8 +31,8 @@ export default function IconsPicker(props) {
 				}}
 			>
 				{!value
-					? __('Add Icon', 'innocode-blocks')
-					: __('Update Icon', 'innocode-blocks')}
+					? __('Add Icon', 'wpd-blocks')
+					: __('Update Icon', 'wpd-blocks')}
 			</Button>
 			{isOpened && (
 				<Modal
@@ -81,7 +81,7 @@ export default function IconsPicker(props) {
 									setIsOpened(false);
 								}}
 							>
-								{__('Set Icon', 'innocode-blocks')}
+								{__('Set Icon', 'wpd-blocks')}
 							</Button>
 						</FlexItem>
 					</Flex>

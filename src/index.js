@@ -7,7 +7,7 @@ import icon from './icon';
 
 import './style.scss';
 
-registerBlockType('innocode/block-counter', {
+registerBlockType('wpd/block-counter', {
 	apiVersion: 2,
 	supports: {
 		align: ['center', 'wide', 'full'],

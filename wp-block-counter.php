@@ -4,17 +4,17 @@
  * Description:       Number animation by user interaction.
  * Requires at least: 5.8
  * Requires PHP:      7.0
- * Version:           1.7.0
- * Author:            Innocode
+ * Version:           1.8.0
+ * Author:            SMFB Dinamo
  * License:           GPL-2.0-or-later
  * License URI:       https://www.gnu.org/licenses/gpl-2.0.html
- * Text Domain:       innocode-blocks
+ * Text Domain:       wpd-blocks
  *
- * @package           innocode
+ * @package           wpd
  */
 
-function innocode_block_counter_block_init() {
+function wpd_block_counter_block_init() {
 	register_block_type( __DIR__ );
 }
 
-add_action( 'init', 'innocode_block_counter_block_init' );
+add_action( 'init', 'wpd_block_counter_block_init' );

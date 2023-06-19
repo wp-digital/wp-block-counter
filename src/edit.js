@@ -64,12 +64,12 @@ export default function Edit(props) {
 		>
 			<InspectorControls>
 				<PanelBody
-					title={__('Section Settings', 'innocode-blocks')}
+					title={__('Section Settings', 'wpd-blocks')}
 					initialOpen={false}
 				>
 					<PanelRow>
 						<ToggleControl
-							label={__('Show title', 'innocode-block-accordion')}
+							label={__('Show title', 'wpd-blocks')}
 							checked={hasSectionTitle}
 							onChange={() => {
 								setAttributes({
@@ -80,10 +80,7 @@ export default function Edit(props) {
 					</PanelRow>
 					<PanelRow>
 						<ToggleControl
-							label={__(
-								'Show description',
-								'innocode-block-accordion'
-							)}
+							label={__('Show description', 'wpd-blocks')}
 							checked={hasSectionDescription}
 							onChange={() => {
 								setAttributes({
@@ -95,7 +92,7 @@ export default function Edit(props) {
 					</PanelRow>
 					<PanelRow>
 						<legend className="blocks-base-control__label">
-							{__('Columns', 'innocode-blocks')}
+							{__('Columns', 'wpd-blocks')}
 						</legend>
 						<RadioGroup
 							onChange={(value) => {
@@ -111,14 +108,11 @@ export default function Edit(props) {
 						</RadioGroup>
 					</PanelRow>
 				</PanelBody>
-				<PanelBody title={__('Item Settings', 'innocode-blocks')}>
+				<PanelBody title={__('Item Settings', 'wpd-blocks')}>
 					{!!ICONS.length && (
 						<PanelRow>
 							<ToggleControl
-								label={__(
-									'Show icon',
-									'innocode-block-accordion'
-								)}
+								label={__('Show icon', 'wpd-blocks')}
 								checked={hasIcon}
 								onChange={() => {
 									setAttributes({
@@ -130,7 +124,7 @@ export default function Edit(props) {
 					)}
 					<PanelRow>
 						<ToggleControl
-							label={__('Show title', 'innocode-block-accordion')}
+							label={__('Show title', 'wpd-blocks')}
 							checked={hasTitle}
 							onChange={() => {
 								setAttributes({
@@ -141,10 +135,7 @@ export default function Edit(props) {
 					</PanelRow>
 					<PanelRow>
 						<ToggleControl
-							label={__(
-								'Show description',
-								'innocode-block-accordion'
-							)}
+							label={__('Show description', 'wpd-blocks')}
 							checked={hasDescription}
 							onChange={() => {
 								setAttributes({
@@ -156,22 +147,16 @@ export default function Edit(props) {
 					{hasTitle && (
 						<PanelRow>
 							<RadioControl
-								label={__('Layout', 'innocode-blocks')}
+								label={__('Layout', 'wpd-blocks')}
 								selected={layout}
 								disabled={!hasTitle}
 								options={[
 									{
-										label: __(
-											'Before Title',
-											'innocode-blocks'
-										),
+										label: __('Before Title', 'wpd-blocks'),
 										value: LAYOUT_BEFORE_TITLE,
 									},
 									{
-										label: __(
-											'After Title',
-											'innocode-blocks'
-										),
+										label: __('After Title', 'wpd-blocks'),
 										value: LAYOUT_AFTER_TITLE,
 									},
 								]}
@@ -183,13 +168,13 @@ export default function Edit(props) {
 					)}
 				</PanelBody>
 				{!!ICONS.length && hasIcon && (
-					<PanelBody title={__('Icons', 'innocode-blocks')}>
+					<PanelBody title={__('Icons', 'wpd-blocks')}>
 						{range(columns).map((i) => (
 							<PanelRow key={i}>
 								<IconsPicker
 									label={sprintf(
 										/* translators: %d: Column number. */
-										__('Column #%d', 'innocode-blocks'),
+										__('Column #%d', 'wpd-blocks'),
 										i + 1
 									)}
 									icons={ICONS}
@@ -209,7 +194,7 @@ export default function Edit(props) {
 				<RichText
 					tagName={SECTION_TITLE_TAG}
 					value={title}
-					placeholder={__('Title', 'innocode-blocks')}
+					placeholder={__('Title', 'wpd-blocks')}
 					onChange={(value) => {
 						setAttributes({ title: value });
 					}}
@@ -221,7 +206,7 @@ export default function Edit(props) {
 					tagName="div"
 					multiline="p"
 					value={description}
-					placeholder={__('Description', 'innocode-blocks')}
+					placeholder={__('Description', 'wpd-blocks')}
 					onChange={(value) => {
 						setAttributes({ description: value });
 					}}
@@ -255,10 +240,7 @@ export default function Edit(props) {
 									<RichText
 										tagName={TITLE_TAG}
 										value={attributes[`title-${i}`]}
-										placeholder={__(
-											'Title',
-											'innocode-blocks'
-										)}
+										placeholder={__('Title', 'wpd-blocks')}
 										onChange={(value) => {
 											setAttributes({
 												[`title-${i}`]: value,
@@ -282,10 +264,7 @@ export default function Edit(props) {
 									<RichText
 										tagName={TITLE_TAG}
 										value={attributes[`title-${i}`]}
-										placeholder={__(
-											'Title',
-											'innocode-blocks'
-										)}
+										placeholder={__('Title', 'wpd-blocks')}
 										onChange={(value) => {
 											setAttributes({
 												[`title-${i}`]: value,
@@ -301,7 +280,7 @@ export default function Edit(props) {
 										value={attributes[`description-${i}`]}
 										placeholder={__(
 											'Description',
-											'innocode-blocks'
+											'wpd-blocks'
 										)}
 										onChange={(value) => {
 											setAttributes({
