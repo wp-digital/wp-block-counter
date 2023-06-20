@@ -7,7 +7,7 @@ when user scrolls to block.
 
 ### Demo
 
-[Counter Block](https://blocks.wpd.digital/counter-block/)
+[Counter Block](https://demo.wpd.digital/counter-block/)
 
 ### Install
 

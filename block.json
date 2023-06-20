@@ -1,15 +1,15 @@
 {
-  "apiVersion": 2,
-  "name": "wpd/block-counter",
-  "version": "1.8.0",
-  "title": "Counter",
-  "category": "design",
-  "description": "Number animation by user interaction.",
-  "supports": {
-	"html": false
-  },
-  "textdomain": "wpd-blocks",
-  "editorScript": "file:./build/index.js",
-  "script": "file:./build/view.js",
-  "style": "file:./build/style-index.css"
+	"apiVersion": 2,
+	"name": "wpd/block-counter",
+	"version": "1.9.0",
+	"title": "Counter",
+	"category": "design",
+	"description": "Number animation by user interaction.",
+	"supports": {
+		"html": false
+	},
+	"textdomain": "wpd-blocks",
+	"editorScript": "file:./build/index.js",
+	"script": "file:./build/view.js",
+	"style": "file:./build/style-index.css"
 }
