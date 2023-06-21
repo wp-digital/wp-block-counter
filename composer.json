@@ -1,6 +1,6 @@
 {
 	"name": "wp-digital/wp-block-counter",
-	"version": "1.9.0",
+	"version": "1.9.1",
 	"type": "wordpress-plugin",
 	"license": "GPL-2.0+",
 	"require": {

@@ -14,14 +14,14 @@ when user scrolls to block.
 - Preferable way is to use [Composer](https://getcomposer.org/):
 
     ````
-    composer require wpd-digital/wp-block-counter
+    composer require wp-digital/wp-block-counter
     ````
 
 - Alternate way is to clone this repo to `wp-content/plugins/`:
 
     ````
     cd wp-content/plugins/
-    git clone git@github.com:wpd-digital/wp-block-counter.git
+    git clone git@github.com:wp-digital/wp-block-counter.git
     ````
 
 Activate **Counter Block** with [WP-CLI](https://make.wordpress.org/cli/handbook/)

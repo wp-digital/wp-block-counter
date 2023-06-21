@@ -1,6 +1,6 @@
 {
 	"name": "wp-block-counter",
-	"version": "1.9.0",
+	"version": "1.9.1",
 	"description": "Number animation by user interaction.",
 	"author": "SMFB Dinamo",
 	"license": "GPL-2.0-or-later",

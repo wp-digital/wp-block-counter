@@ -1,7 +1,7 @@
 {
 	"apiVersion": 2,
 	"name": "wpd/block-counter",
-	"version": "1.9.0",
+	"version": "1.9.1",
 	"title": "Counter",
 	"category": "design",
 	"description": "Number animation by user interaction.",
